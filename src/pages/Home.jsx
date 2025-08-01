@@ -1,6 +1,6 @@
 import homeBg from '../assets/img/home-bg.webp'
 import homeImg from '../assets/img/home-bread.webp'
-import breadOverlay from '../assets/img/bread-1.png'
+import homeBreadOverlay from '../assets/img/bread-1.png'
 import { RiFacebookCircleLine, RiInstagramLine, RiMapPinFill, RiYoutubeLine } from '@remixicon/react'
 
 const Home = () => {
@@ -17,7 +17,7 @@ const Home = () => {
               <a href="#new" className="mt-5 inline-block px-5 py-3 bg-primary text-gray-950 lg:mt-10 lg:px-7">
                 Select Breads
               </a>
-              <img src={breadOverlay} alt="home bread overlay" className='absolute w-15 -bottom-18 -left-5 sm:-bottom-15 lg:bottom-0 lg:left-70' />
+              <img src={homeBreadOverlay} alt="home bread overlay" className='absolute w-15 -bottom-18 -left-5 sm:-bottom-15 lg:bottom-0 lg:left-70' />
             </div>
           </div>
 

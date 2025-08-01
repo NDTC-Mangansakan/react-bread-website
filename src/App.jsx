@@ -1,4 +1,5 @@
 import Navbar from './components/Navbar'
+import About from './pages/About'
 import Home from './pages/Home'
 import New from './pages/New'
 
@@ -8,6 +9,7 @@ const App = () => {
       <Navbar />
       <Home />
       <New/>
+      <About/>
     </>
   )
 }
