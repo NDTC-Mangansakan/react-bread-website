@@ -14,7 +14,7 @@ html{
 }
 
 body{
-  @apply font-serif relative bg-gray-950 text-white;
+  @apply font-serif relative bg-gray-950 text-white overflow-x-hidden;
   height: 500vh;
 }
 

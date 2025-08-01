@@ -1,14 +1,13 @@
-import bg from './assets/img/home-bg.webp'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
+import New from './pages/New'
 
 const App = () => {
   return (
     <>
-      <div style={{ backgroundImage: `url(${bg})` }}>
-        <Navbar />
-        <Home />
-      </div>
+      <Navbar />
+      <Home />
+      <New/>
     </>
   )
 }

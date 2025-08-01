@@ -1,10 +1,11 @@
+import homeBg from '../assets/img/home-bg.webp'
 import homeImg from '../assets/img/home-bread.webp'
 import breadOverlay from '../assets/img/bread-1.png'
 import { RiFacebookCircleLine, RiInstagramLine, RiMapPinFill, RiYoutubeLine } from '@remixicon/react'
 
 const Home = () => {
   return (
-    <section id='home' className='min-h-[90vh] py-10 flex items-center bg-no-repeat bg-cover bg-fixed lg:py-0' >
+    <section id='home' className='min-h-[90vh] pt-[17vh] pb-10 flex items-center bg-no-repeat bg-cover bg-fixed' style={{backgroundImage: `url(${homeBg})`}}>
       <div className="custom-container">
         <div className="flex flex-col gap-10 items-center justify-center lg:flex-row lg:gap-0">
           {/* Home data */}

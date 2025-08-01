@@ -10,7 +10,7 @@ const Navbar = () => {
     }
 
     return (
-        <nav className='h-[10vh] sticky top-0 right-0 left-0 flex items-center z-99 bg-transparent backdrop-blur-xs'>
+        <nav className='h-[10vh] fixed top-0 right-0 left-0 flex items-center z-99 bg-transparent backdrop-blur-xs'>
             <div className="custom-container flex justify-between items-center">
                 <p className="text-xl italic text-primary font-bold ">Bakery</p>
 
