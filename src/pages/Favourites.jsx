@@ -1,9 +1,13 @@
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+
 import favouriteBread1 from '../assets/img/favorite-bread-1.png'
 import favouriteBread2 from '../assets/img/favorite-bread-2.png'
 import favouriteBread3 from '../assets/img/favorite-bread-3.png'
 import favouriteBread4 from '../assets/img/favorite-bread-4.png'
 import favouriteBread5 from '../assets/img/favorite-bread-5.png'
 import favouriteBread6 from '../assets/img/favorite-bread-6.png'
+
 
 const favouriteBreadInfo = [
   {
@@ -42,7 +46,7 @@ const FavouriteBreadComponent = ({breadName, breadImg, price}) => {
   return(
     <div className='group p-5 border border-transparent bg-gray-900/60 transition-all duration-200 hover:border-primary'>
       <img src={breadImg} alt={breadName} 
-           className='w-40 mx-auto -translate-y-12 sm:w-45 transition-transform duration-200 group-hover:scale-105'/>
+           className='favourite-bread w-40 mx-auto opacity-0 -translate-y-12 sm:w-45 transition-transform duration-200 group-hover:scale-105'/>
       <div className='-translate-y-8'>
         <p className="text-primary text-lg italic font-semibold">{breadName}</p>
         <p className="text-sm text-gray-400">Bread</p>
@@ -53,6 +57,19 @@ const FavouriteBreadComponent = ({breadName, breadImg, price}) => {
 }
 
 const Favourites = () => {
+
+  useGSAP(() => {
+    gsap.to('.favourite-bread', {
+      scrollTrigger:{
+        trigger: '.favourite-bread',
+        start: 'top 80%'
+      },
+      opacity: 1,
+      ease: 'power1.inOut',
+      stagger: .2
+    })
+  }, [])
+
   return (
     <section id='favourites' className='py-10'>
       <div className="custom-container">
