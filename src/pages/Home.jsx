@@ -85,15 +85,15 @@ const Home = () => {
           </div>
 
           <div className="home-links flex items-center gap-2 text-gray-400 sm:gap-5">
-            <span className="cursor-pointer transition-colors duration-200 hover:text-white">
+            <span className="cursor-pointer transition-colors duration-200 hover:text-primary">
               <RiFacebookCircleLine/>
             </span>
 
-            <span className="cursor-pointer transition-colors duration-200 hover:text-white">
+            <span className="cursor-pointer transition-colors duration-200 hover:text-primary">
               <RiInstagramLine />
             </span>
 
-            <span className="cursor-pointer transition-colors duration-200 hover:text-white">
+            <span className="cursor-pointer transition-colors duration-200 hover:text-primary">
               <RiYoutubeLine />
             </span>
           </div>

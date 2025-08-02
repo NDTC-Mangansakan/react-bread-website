@@ -33,15 +33,15 @@ const Footer = () => {
 
                         <div className="mt-3 flex items-center justify-center gap-3 text-gray-400 lg:justify-start">
 
-                            <span className="cursor-pointer transition-colors duration-200 hover:text-white">
+                            <span className="cursor-pointer transition-colors duration-200 hover:text-primary">
                                 <RiFacebookCircleLine/>
                             </span>
 
-                            <span className="cursor-pointer transition-colors duration-200 hover:text-white">
+                            <span className="cursor-pointer transition-colors duration-200 hover:text-primary">
                                 <RiInstagramLine />
                             </span>
 
-                            <span className="cursor-pointer transition-colors duration-200 hover:text-white">
+                            <span className="cursor-pointer transition-colors duration-200 hover:text-primary">
                                 <RiYoutubeLine />
                             </span>
                         </div>
