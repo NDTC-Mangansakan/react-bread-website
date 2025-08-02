@@ -14,7 +14,7 @@ const About = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quae recusandae veritatis, officia reprehenderit sit atque voluptates, molestiae voluptatem soluta, excepturi exercitationem nam expedita maiores.
             </p>
             <div className="mt-5 flex justify-center lg:justify-start lg:mt-0">
-              <a href="#new" className="inline-block px-5 py-3 bg-primary text-gray-950 lg:mt-10 lg:px-7">
+              <a href="#about" className="inline-block px-5 py-3 bg-primary text-gray-950 lg:mt-10 lg:px-7">
                 Learn More
               </a>
             </div>
