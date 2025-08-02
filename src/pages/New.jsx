@@ -1,6 +1,8 @@
+import { useGSAP } from '@gsap/react'
 import newBread1 from '../assets/img/new-bread-1.webp'
 import newBread2 from '../assets/img/new-bread-2.webp'
 import newBread3 from '../assets/img/new-bread-3.webp'
+import gsap from 'gsap'
 
 const newBreadsInfo = [
   {
@@ -30,12 +32,26 @@ const BreadComponent = ({ breadName, info, img, index }) => {
     <div className={`text-center flex flex-col ${flexDirection} w-[320px] lg:w-1/3`}>
       <p className="italic text-primary text-xl sm:text-2xl lg:text-3xl">{breadName}</p>
       <p className={`px-2 mt-3 text-gray-400 ${subTextMargin} [350px]:px-0`}>{info}</p>
-      <img src={img} alt={breadName} className={`mt-8 w-40 mx-auto lg: sm:w-50  ${imgMargin}`}/>
+      <img src={img} alt={breadName} className={`new-img mt-8 w-40 mx-auto lg: sm:w-50  ${imgMargin}`}/>
     </div>
   )
 }
 
 const New = () => {
+
+  useGSAP(() => {
+    gsap.from('.new-img', {
+      scrollTrigger:{
+        trigger: '.new-img',
+        start: 'top 80%',
+      },
+      scale: 1.1,
+      rotate: 5,
+      ease: 'power1.inOut',
+      stagger: .3
+    })
+  }, [])
+
   return (
     <section id='new' className='py-10'>
       <div className="custom-container">
