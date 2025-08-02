@@ -1,3 +1,4 @@
+import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import About from './pages/About'
 import Favourites from './pages/Favourites'
@@ -14,6 +15,7 @@ const App = () => {
       <About/>
       <Favourites/>
       <Location/>
+      <Footer/>
     </>
   )
 }

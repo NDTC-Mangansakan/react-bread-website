@@ -62,7 +62,7 @@ const Favourites = () => {
 
         <div className="max-w-xs mx-auto mt-15 grid gap-15 grid-cols-1 sm:grid-cols-2 sm:max-w-xl lg:grid-cols-3 lg:max-w-3xl lg:gap-10">
           {favouriteBreadInfo.map(({breadName, breadImg, price}) => (
-            <FavouriteBreadComponent breadName={breadName} breadImg={breadImg} price={price}/>
+            <FavouriteBreadComponent key={breadName} breadName={breadName} breadImg={breadImg} price={price}/>
           ))}
         </div>
       </div>
